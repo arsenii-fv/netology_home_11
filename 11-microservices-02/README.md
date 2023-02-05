@@ -12,7 +12,7 @@
 - Маршрутизация запросов к нужному сервису на основе конфигурации
 - Возможность проверки аутентификационной информации в запросах
 - Обеспечение терминации HTTPS
-
+```
             Продукт      Kong        Tyk.io        APIGee        AWS Gateway       Azure Gateway         Express Gateway
 Сложность
 Развертывания           Single        Single        Many           Cloud               Cloud                 Flexible
@@ -28,7 +28,7 @@ Data Transformation       HTTP          HTTP          Yes            No         
 
 request-
 Termination                Yes          Не нашел      Не нашел       Yes                 Yes                   Yes
-
+```
 1. Конфигурировать можно любое предоставленное выше решение (например в AWS использует сервис Lambda  в котором записываются функции обработчики запросов)
 2. Все API поддерживают аутентификацию.
 3. Многие решения поддерживают терминацию
@@ -36,13 +36,14 @@ Termination                Yes          Не нашел      Не нашел    
 Если продукт не использует много запросов или необходима легкость развертывания, можно использовать облачные решения.Если необходима независимость и гибкость в управлении  лучше  использовать open source решения.
 
 Обоснуйте свой выбор.
+```
 https://www.altexsoft.com/blog/api-gateway/
 https://www.moesif.com/blog/technical/api-gateways/How-to-Choose-The-Right-API-Gateway-For-Your-Platform-Comparison-Of-Kong-Tyk-Apigee-And-Alternatives/
-
+```
 ## Задача 2: Брокер сообщений
 
 Составьте таблицу возможностей различных брокеров сообщений. На основе таблицы сделайте обоснованный выбор решения.
-
+```
                  Продукт      Kong        Tyk.io        APIGee        AWS Gateway       Azure Gateway    Express
                                                                                                    Gateway(Google)   Kraken              
                                         
@@ -61,7 +62,7 @@ https://www.moesif.com/blog/technical/api-gateways/How-to-Choose-The-Right-API-G
 к различным потокам сообщений                                               +
 
 Проcтота эксплуатации                         -                             +                 +
-
+```
 Решение должно соответствовать следующим требованиям:
 - Поддержка кластеризации для обеспечения надежности
 - Хранение сообщений на диске в процессе доставки
@@ -76,8 +77,9 @@ https://www.moesif.com/blog/technical/api-gateways/How-to-Choose-The-Right-API-G
 Либо условно бесплатные решения если проект не большой и необходимо быстро выйти в продакшн.
 
 Обоснуйте свой выбор.
+```
 https://babok-school.ru/blogs/integration-api-overview-rest-soap-grpc-graphql/
-
+```
 ## Задача 3: API Gateway * (необязательная)
 
 ### Есть три сервиса:
